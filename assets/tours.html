@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tours</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<nav>
+	<ul class="sidenav">
+  		<li><a href="../index.html"target="_self">Home</a></li>
+  		<li><a href="about.html">About Us</a></li>
+ 		<li><a href="tours.html" target="_self">Tours</a></li>
+  		<li><a href="contact.html" target="_self">Contact</a></li>  		
+  		<li class="b1"><a href="https://www.facebook.com/ruslan4iii"><i class="fab fa-facebook"></i></a></li>
+		<li class="b1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+		<li class="b1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+	</ul>		
+</nav>
+
+<div class="content-t">
+	<div class="header-t">
+	  <h2>Get Your <span style="color:#e74c3c">HotTours</span></h2>
+  </div>
+
+ <div class="responsive">
+  		<div class="gallery">
+  			
+  		<img src="../images/1.jpg" width="300" height="400"  alt="Republic Square of Yerevan - is the central town square of Yerevan, completed 1977" id="myimg">  		
+  		</div>	
+
+      <div class="container">
+          <p>Republic_Square</p>
+      </div>
+  </div>
+
+  <div class="responsive">
+  		<div class="gallery">  			
+  			<a href="../images/2.jpg"><img src="../images/2.jpg" width="300" height="400" alt="Opera House"></a>		
+      </div>	
+      <div class="container">
+          <p>Opera_House</p>
+      </div>  
+  </div>
+
+  <div class="responsive">
+  		<div class="gallery">  			
+  		<img src="../images/index.jpg" width="300" height="400" class="img">
+  		<div class="overlay">
+             <div class="text">Cascade</div>
+          </div>
+  		</div>
+  		<div class="container">
+		  		<p>Cascade</p>
+		  </div>	
+  </div>
+
+  <div class="responsive">
+  		<div class="gallery">  			
+  		<img src="../images/lion.jpg" width="300" height="400" class="myimg">
+  		    <div class="overlay2">
+             <div class="text">Lion_Installation</div>
+          </div>
+  		</div>	
+  		<div class="container">
+		  		<p>Cascade_Installations</p>
+		  </div>
+  </div>
+
+   <div class="responsive">
+  		<div class="gallery">
+  			
+  			<img src="../images/garni.jpg" width="300" height="400" class="myimg">
+  		    <div class="overlay3">
+             <div class="text">Garni</div>
+          </div>
+  		</div>
+  		<div class="container">
+		  		<p>Garni</p>
+		  </div>	
+  </div>
+
+   <div class="responsive">
+  		<div class="gallery">
+  			
+  			<img src="../images/geghard.jpg" width="600" height="400" class="myimg">
+  		        <div class="overlay4">
+                  <div class="text">Geghard</div>
+               </div>
+  		</div>
+  		<div class="container">
+		  		<p>Geghard</p>
+		  </div>	
+  </div>
+
+  <div class="responsive">
+  		<div class="gallery">
+  			
+  			<img src="../images/armenia_syunik_devils_bridge_1600x900.jpg" width="600" height="400" class="myimg">
+  		
+  		</div>
+  		<div class="container">
+		  		<p>Syunik_Devils_Bridge</p>
+		  </div>	
+  </div>
+
+  <div class="responsive">
+  		<div class="gallery">
+  			
+  			<img src="../images/sevan.jpg" width="600" height="400"  id="myimg">
+  		
+  		</div>	
+  		<div class="container">
+		  		<p>Lake_Sevan</p>
+		  </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="content">
+  <footer>
+    <div class="row">
+      <div class="coll">
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="coll">
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="coll">
+        <a href="#">Contact Support</a>
+      </div>
+      <div class="coll">
+        <p>Copyright © 2020, Inc. All Rights Reserved.</p>
+        <p>Headquarters El Camino, Pulp Fiction 54/1, USA</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myimg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
